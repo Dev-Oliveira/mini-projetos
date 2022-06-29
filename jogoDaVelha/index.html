@@ -1,66 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE <!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <title> 🎮 Jogo da Velha</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="app">
-    <div class="container-fluid app-container">
-      <div class="row app-row">
-        <div class="col-xs-4 play-box" id="0">
-          <div class="symbol"></div>
-        </div>
-        <div class="col-xs-4 play-box" id="1">
-          <div class="symbol"></div>
-        </div>
-        <div class="col-xs-4 play-box last-right" id="2">
-          <div class="symbol"></div>
-        </div>
-        <div class="col-xs-4 play-box" id="3">
-          <div class="symbol"></div>
-        </div>
-        <div class="col-xs-4 play-box" id="4">
-          <div class="symbol"></div>
-        </div>
-        <div class="col-xs-4 play-box last-right" id="5">
-          <div class="symbol"></div>
-        </div>
-        <div class="col-xs-4 play-box last-bottom" id="6">
-          <div class="symbol"></div>
-        </div>
-        <div class="col-xs-4 play-box last-bottom" id="7">
-          <div class="symbol"></div>
-        </div>
-        <div class="col-xs-4 play-box last-right last-bottom" id="8">
-          <div class="symbol"></div>
-        </div>
-      </div>
+  <div>
+    <!--Jogo da Velha-->
+    <h1>Jogo da Velha</h1>
+    <p>Jogador 1 : X | Jogador 2 : O</p>
+
+    <!--PRIMEIRA LINHA-->
+    <div class="divInput">
+      <input type="text" id="cel1" maxlength="1" onkeypress="window.compara()">
+      <input type="text" id="cel2" maxlength="1" onkeypress="window.compara()">
+      <input type="text" id="cel3" maxlength="1" onkeypress="window.compara()"><br><br>
+
+      <!--SEGUNDA LINHA-->
+      <input type="text" id="cel4" maxlength="1" onkeypress="window.compara()">
+      <input type="text" id="cel5" maxlength="1" onkeypress="window.compara()">
+      <input type="text" id="cel6" maxlength="1" onkeypress="window.compara()"><br><br>
+
+      <!--TERCEIRA LINHA-->
+      <input type="text" id="cel7" maxlength="1" onkeypress="window.compara()">
+      <input type="text" id="cel8" maxlength="1" onkeypress="window.compara()">
+      <input type="text" id="cel9" maxlength="1" onkeypress="window.compara()"><br><br>
     </div>
   </div>
-
-  <div class="modal fade app-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-size">
-      <div class="modal-content">
-        <h3 class="content heading">Warning!!!</h3>
-        <hr class="warning-hr">
-        <div class="content body">
-          Please save your time and don't even think you're smart. <br><strong><em>I'M SMARTER THAN YOU! HA-HA-HA!!!</em></strong> <br>
-          Wana try me? Chose : <br>
-          <div class="center-block symbol-options">
-            <button class="symbol-option btn btn-default btn-md" data-dismiss="modal">X</button> OR <button class="symbol-option btn btn-default btn-md" data-dismiss="modal">O</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </body>
-
 <script src="main.js"></script>
 
 </html>
