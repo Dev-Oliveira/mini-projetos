@@ -2,6 +2,7 @@ body {
   width: 515px;
   margin: 4% auto;
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgba(15, 62, 216, 0.2);
   letter-spacing: 5px;
   font-size: 1.8rem;
   -moz-user-select: none;
@@ -13,11 +14,11 @@ body {
   padding: 20px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 1px;
+  border-radius: 10px;
 }
 
 .input {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(3, 3, 3, 0.2);
   border-radius: 1px;
   height: 60px;
   padding-right: 15px;
@@ -42,7 +43,7 @@ body {
 .operators div {
   display: inline-block;
   border: 1px solid #bbb;
-  border-radius: 1px;
+  border-radius: 5px;
   width: 80px;
   text-align: center;
   padding: 10px;
@@ -70,7 +71,7 @@ body {
 .numbers div {
   display: inline-block;
   border: 1px solid #ddd;
-  border-radius: 1px;
+  border-radius: 5px;
   width: 80px;
   text-align: center;
   padding: 10px;
@@ -94,7 +95,7 @@ body {
 div.equal {
   display: inline-block;
   border: 1px solid #3079ED;
-  border-radius: 1px;
+  border-radius: 5px;
   width: 17%;
   text-align: center;
   padding: 127px 10px;
